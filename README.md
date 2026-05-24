@@ -53,47 +53,47 @@ To digitize and simplify the daily operations of beauty parlors — from custome
 ![Hero](static/images/1.png)
 
 - Services Section
-![About](../saya-beauty-parlor/static/images/2.png)
+![About](static/images/2.png)
 
 - Packages Section
-![Packages](../saya-beauty-parlor/static/images/3.png)
+![Packages](static/images/3.png)
 
 - Gallery & Staff Section
-![Gallery](../saya-beauty-parlor/static/images/41.png)
+![Gallery](static/images/41.png)
 
 - Testimonials & Contact
-![Contact](../saya-beauty-parlor/static/images/51.png)
+![Contact](static/images/51.png)
 
 - Appointment Booking Form
-![Booking](../saya-beauty-parlor/static/images/61.png)
+![Booking](static/images/61.png)
 
 - Manager Login Page
-![Login](../saya-beauty-parlor/static/images/71.png)
+![Login](static/images/71.png)
 
 - Admin Dashboard Home
-![Dashboard](../saya-beauty-parlor/static/images/81.png)
+![Dashboard](static/images/81.png)
 
 - Appointments Management
-![Appointments](../saya-beauty-parlor/static/images/91.png)
+![Appointments](static/images/91.png)
 
 - Billing & Invoice
-![Billing](../saya-beauty-parlor/static/images/10.png)
+![Billing](static/images/10.png)
 
 - Revenue Report & Charts
-![Revenue](../saya-beauty-parlor/static/images/11.png)
+![Revenue](static/images/11.png)
 
 - Staff Management
-![Staff](../saya-beauty-parlor/static/images/12.png)
+![Staff](static/images/12.png)
 
-![Staff](../saya-beauty-parlor/static/images/13.png)
+![Staff](static/images/13.png)
 
-![Staff](saya-beauty-parlor/static/images/14.png)
+![Staff](static/images/14.png)
 
-![Staff](../saya-beauty-parlor/static/images/15.png)
+![Staff](static/images/15.png)
 
-![Staff](../saya-beauty-parlor/static/images/16.png)
+![Staff](static/images/16.png)
 
-![Staff](../saya-beauty-parlor/static/images/17.png)
+![Staff](static/images/17.png)
 
 ---
 
