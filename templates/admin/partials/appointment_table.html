@@ -1,0 +1,23 @@
+<div class="table-responsive">
+  <table class="table align-middle admin-table">
+    <thead><tr><th>ID</th><th>Customer</th><th>Mobile</th><th>Service</th><th>Staff</th><th>Date</th><th>Time</th><th>Status</th><th>Action</th></tr></thead>
+    <tbody>
+    {% set rows = appointments if appointments is defined else recent %}
+    {% for a in rows %}
+      <tr>
+        <td>#{{ a.id }}</td><td>{{ a.customer_name }}<br><small>{{ a.email }}</small></td><td>{{ a.mobile }}</td><td>{{ a.service_name or '-' }}</td><td>{{ a.staff_name or 'Any' }}</td><td>{{ a.appointment_date }}</td><td>{{ a.appointment_time }}</td>
+        <td><span class="status status-{{ a.status|lower }}">{{ a.status }}</span></td>
+        <td class="actions">
+          {% if a.status == 'Pending' %}<a title="Confirm" href="{{ url_for('update_appointment_status', action='confirm', id=a.id) }}"><i class="fa-solid fa-check"></i></a>{% endif %}
+          {% if a.status != 'Completed' %}<a title="Complete" href="{{ url_for('update_appointment_status', action='complete', id=a.id) }}"><i class="fa-solid fa-circle-check"></i></a>{% endif %}
+          <a title="Bill" href="{{ url_for('generate_bill', appointment_id=a.id) }}"><i class="fa-solid fa-file-invoice"></i></a>
+          <a title="Cancel" href="{{ url_for('update_appointment_status', action='cancel', id=a.id) }}"><i class="fa-solid fa-ban"></i></a>
+          <a title="Delete" onclick="return confirm('Delete this appointment?')" href="{{ url_for('delete_appointment', id=a.id) }}"><i class="fa-solid fa-trash"></i></a>
+        </td>
+      </tr>
+    {% else %}
+      <tr><td colspan="9" class="text-center text-muted py-4">No appointments found.</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>

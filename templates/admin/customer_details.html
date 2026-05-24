@@ -1,0 +1,6 @@
+{% extends 'admin/admin_base.html' %}
+{% block page_title %}Customer History{% endblock %}
+{% block admin_content %}
+<div class="panel mb-4"><h5>{{ customer.name }}</h5><p class="mb-0">Mobile: {{ customer.mobile }} | Email: {{ customer.email }} | Visits: {{ customer.total_visits }} | Spend: ₹{{ customer.total_spend }}</p></div>
+<div class="panel">{% set appointments = history %}{% include 'admin/partials/appointment_table.html' %}</div>
+{% endblock %}

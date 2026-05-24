@@ -1,0 +1,13 @@
+{% extends 'admin/admin_base.html' %}
+{% block page_title %}{{ title or 'Appointments' }}{% endblock %}
+{% block admin_content %}
+<div class="panel mb-4">
+  <form class="row g-2">
+    <div class="col-md-4"><input class="form-control" name="search" placeholder="Search name or mobile" value="{{ request.args.get('search','') }}"></div>
+    <div class="col-md-3"><input class="form-control" type="date" name="date" value="{{ request.args.get('date','') }}"></div>
+    <div class="col-md-3"><select class="form-select" name="status"><option value="">All Status</option>{% for s in ['Pending','Confirmed','Completed','Cancelled'] %}<option value="{{ s }}" {% if request.args.get('status')==s %}selected{% endif %}>{{ s }}</option>{% endfor %}</select></div>
+    <div class="col-md-2"><button class="btn btn-rose w-100">Filter</button></div>
+  </form>
+</div>
+<div class="panel">{% include 'admin/partials/appointment_table.html' %}</div>
+{% endblock %}

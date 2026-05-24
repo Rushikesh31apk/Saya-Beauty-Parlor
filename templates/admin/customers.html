@@ -1,0 +1,12 @@
+{% extends 'admin/admin_base.html' %}
+{% block page_title %}Customers{% endblock %}
+{% block admin_content %}
+<div class="panel mb-4">
+  <form class="row g-2"><div class="col-md-10"><input class="form-control" name="search" placeholder="Search customer by name or mobile" value="{{ request.args.get('search','') }}"></div><div class="col-md-2"><button class="btn btn-rose w-100">Search</button></div></form>
+</div>
+<div class="panel table-responsive">
+<table class="table admin-table align-middle"><thead><tr><th>ID</th><th>Name</th><th>Mobile</th><th>Email</th><th>Visits</th><th>Total Spend</th><th>Last Visit</th><th>Action</th></tr></thead><tbody>
+{% for c in customers %}<tr><td>#{{ c.id }}</td><td>{{ c.name }}</td><td>{{ c.mobile }}</td><td>{{ c.email }}</td><td>{{ c.total_visits }}</td><td>₹{{ c.total_spend }}</td><td>{{ c.last_visit or '-' }}</td><td><a class="btn btn-sm btn-outline-rose" href="{{ url_for('customer_details', id=c.id) }}">History</a></td></tr>{% else %}<tr><td colspan="8" class="text-center py-4">No customers found.</td></tr>{% endfor %}
+</tbody></table>
+</div>
+{% endblock %}

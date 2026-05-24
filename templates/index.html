@@ -1,0 +1,515 @@
+{% extends 'base.html' %}
+{% block title %}Saya Beauty Parlor — Glow Naturally, Shine Beautifully{% endblock %}
+
+{% block content %}
+
+<!-- ======================================
+     NAVBAR
+     ====================================== -->
+<nav class="navbar navbar-expand-lg fixed-top glass-nav">
+  <div class="container">
+    <a class="navbar-brand brand" href="#home">
+      <i class="fa-solid fa-spa me-2" style="font-size:1.4rem;vertical-align:middle;"></i>Saya
+    </a>
+    <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#staff">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="nav-link btn-book-nav" href="#booking">
+            <i class="fa-regular fa-calendar-check me-1"></i>Book Now
+          </a>
+        </li>
+        <li class="nav-item ms-lg-1">
+          <a class="nav-link btn-login-nav" href="{{ url_for('login') }}">
+            <i class="fa-solid fa-user-shield me-1"></i>Manager
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================================
+     HERO
+     ====================================== -->
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="container hero-content py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <br>
+        <span class="hero-script reveal">Where beauty meets artistry</span>
+        <h1 class="hero-headline reveal reveal-delay-1">
+          Glow<br><em>Naturally,</em><br>Shine Beautifully
+        </h1>
+        <p class="hero-sub reveal reveal-delay-2">
+          Premium beauty, hair, makeup, facials, spa &amp; bridal services crafted with expert hands and premium products — just for you.
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="#booking" class="btn-primary-hero">
+            <i class="fa-regular fa-calendar-check"></i>Reserve Your Appointment
+          </a>
+          <a href="#services" class="btn-ghost-hero">
+            <i class="fa-solid fa-sparkles"></i>Explore Services
+          </a>
+        </div>
+        <div class="hero-stats reveal reveal-delay-4">
+          <div class="hero-stat">
+            <strong>16+</strong>
+            <span>Services</span>
+          </div>
+          <div class="hero-separator"></div>
+          <div class="hero-stat">
+            <strong>3+</strong>
+            <span>Beauty Experts</span>
+          </div>
+          <div class="hero-separator"></div>
+          <div class="hero-stat">
+            <strong>4.9★</strong>
+            <span>Client Rating</span>
+          </div>
+          <div class="hero-separator"></div>
+          <div class="hero-stat">
+            <strong>500+</strong>
+            <span>Happy Clients</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0">
+        <div class="hero-collage reveal reveal-delay-2">
+          <div class="hero-img-main"></div>
+            <strong>4.9</strong>
+            <small>★ Rating</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     MARQUEE
+     ====================================== -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    {% for item in ['Bridal Makeup','Hair Styling','Skin Facials','Threading & Waxing','Nail Art','Mehendi','Hair Spa','Manicure & Pedicure','Saree Draping','Skin Cleanup','Eyebrow Shaping','Keratin Treatment'] * 3 %}
+    <span class="marquee-item"><i class="fa-solid fa-star"></i>{{ item }}</span>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- ======================================
+     ABOUT
+     ====================================== -->
+<section id="about" class="section-pad bg-cream">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <div class="about-img-wrap reveal">
+          <div class="about-img-main"></div>
+          <div class="about-img-accent"></div>
+          <div class="about-years-badge">
+            <strong>5+</strong>
+            <span>Years of<br>Beauty</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 offset-lg-1">
+        <div class="reveal reveal-delay-1">
+          <span class="eyebrow">About Us</span>
+          <h2 class="display-serif" style="font-size:clamp(2.4rem,5vw,3.8rem);margin-bottom:1.2rem;">
+            Where Confidence<br>Meets <em style="color:var(--rose);">Beauty</em>
+          </h2>
+          <p style="color:var(--muted);font-size:1rem;line-height:1.8;margin-bottom:1rem;">
+            Saya Beauty Parlor is a premium beauty studio offering high-quality treatments, makeup artistry, hair styling, skincare, bridal services, and personal care solutions — all under one luxurious roof.
+          </p>
+          <p style="color:var(--muted);font-size:.93rem;line-height:1.8;margin-bottom:1.6rem;">
+            Every service is delivered with precision, care, and passion by our certified beauty experts. We believe every client deserves to feel like royalty.
+          </p>
+          <div class="about-features">
+            <div class="about-feat"><i class="fa-solid fa-shield-heart"></i><span>100% Hygienic</span></div>
+            <div class="about-feat"><i class="fa-solid fa-user-check"></i><span>Certified Experts</span></div>
+            <div class="about-feat"><i class="fa-solid fa-gem"></i><span>Premium Products</span></div>
+            <div class="about-feat"><i class="fa-solid fa-tags"></i><span>Affordable Prices</span></div>
+            <div class="about-feat"><i class="fa-solid fa-leaf"></i><span>Organic Options</span></div>
+            <div class="about-feat"><i class="fa-solid fa-heart"></i><span>Personalized Care</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     SERVICES
+     ====================================== -->
+<section id="services" class="section-pad bg-petal">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2 class="display-serif" style="font-size:clamp(2.2rem,4.5vw,3.4rem);">
+        Beauty Services <em style="color:var(--rose);">Designed for You</em>
+      </h2>
+      <p style="color:var(--muted);max-width:520px;margin:1rem auto 0;font-size:.95rem;">
+        From everyday grooming to special occasions — we have every beauty need covered with expert care.
+      </p>
+    </div>
+    <div class="row g-4">
+      {% for service in services %}
+      <div class="col-md-6 col-lg-3 reveal" style="--delay: {{ loop.index0 * 0.08 }}s; transition-delay: var(--delay);">
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <span class="service-category-badge">{{ service.category }}</span>
+          <h5>{{ service.name }}</h5>
+          <p>{{ service.description }}</p>
+          <div class="d-flex justify-content-between align-items-center mt-auto">
+            <span class="service-price">₹{{ '%.0f'|format(service.price) }}</span>
+            <span class="service-duration">
+              <i class="fa-regular fa-clock" style="margin-right:4px;color:var(--muted);"></i>{{ service.duration }}
+            </span>
+          </div>
+          <a href="#booking" class="btn-book-sm">
+            <i class="fa-regular fa-calendar-plus"></i>Book Now
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     PACKAGES
+     ====================================== -->
+<section id="packages" class="section-pad bg-cream">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow">Packages</span>
+      <h2 class="display-serif" style="font-size:clamp(2.2rem,4.5vw,3.4rem);">
+        Special Beauty <em style="color:var(--rose);">Packages</em>
+      </h2>
+    </div>
+    <div class="row g-4">
+      {% set pkg_list = [
+        ('Basic Glow','fa-leaf','Cleanup + Threading + Glow Mask','Everyday freshness','₹699',false),
+        ('Premium Facial','fa-spa','Facial + Cleanup + Head Massage','Deep nourishment','₹1499',false),
+        ('Bridal Dream','fa-crown','Makeup + Hair + Saree Draping','For your special day','₹9999',true),
+        ('Hair Revival','fa-scissors','Hair Spa + Styling + Trim','Salon-fresh hair','₹1299',false),
+        ('Full Body Glow','fa-star','Waxing + Manicure + Pedicure','Head to toe beauty','₹2499',false)
+      ] %}
+      {% for name, icon, inc, tagline, price, featured in pkg_list %}
+      <div class="col-md-6 col-lg reveal" style="transition-delay:{{ loop.index0 * 0.1 }}s;">
+        <div class="package-card {% if featured %}featured{% endif %} h-100">
+          <span class="pkg-tag">{% if featured %}⭐ Best{% else %}Offer{% endif %}</span>
+          <div class="pkg-icon"><i class="fa-solid {{ icon }}"></i></div>
+          <h5>{{ name }}</h5>
+          <p style="margin:6px 0 2px;font-size:.82rem;">{{ tagline }}</p>
+          <p style="font-size:.83rem;margin-bottom:0;">{{ inc }}</p>
+          <div class="pkg-price">{{ price }}</div>
+          <button class="btn-pkg" onclick="window.location='#booking'">Book Package</button>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     GALLERY
+     ====================================== -->
+<section id="gallery" class="section-pad bg-petal">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2 class="display-serif" style="font-size:clamp(2.2rem,4.5vw,3.4rem);">
+        Our Beautiful <em style="color:var(--rose);">Moments</em>
+      </h2>
+    </div>
+
+    {% set gallery_items = [
+      ('Salon Interior',    'photo-1560066984-138dadb4c035'),
+      ('Makeup Artistry',   'photo-1487412947147-5cebf100ffc2'),
+      ('Bridal Styling',    'photo-1519415387722-a1c3bbef716c'),
+      ('Hair Treatments',   'photo-1522337360788-8b13dee7a37e'),
+      ('Facial & Skincare', 'photo-1570172619644-dfd03ed5d881'),
+      ('Final Glow',        'photo-1531203373255-57df2d8caab2')
+    ] %}
+
+    <div class="gallery-grid reveal">
+      {% for label, photo_id in gallery_items %}
+      <div class="gallery-item">
+        <img
+          class="gallery-img"
+          src="https://images.unsplash.com/{{ photo_id }}?auto=format&fit=crop&w=900&q=80"
+          alt="{{ label }}"
+          loading="lazy"
+        />
+        <div class="gallery-overlay">
+          <span class="gallery-label">{{ label }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     STAFF
+     ====================================== -->
+<section id="staff" class="section-pad bg-cream">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow">Beauty Experts</span>
+      <h2 class="display-serif" style="font-size:clamp(2.2rem,4.5vw,3.4rem);">
+        Meet Our <em style="color:var(--rose);">Talented Team</em>
+      </h2>
+      <p style="color:var(--muted);max-width:480px;margin:1rem auto 0;font-size:.93rem;">
+        Passionate professionals dedicated to making you look and feel your absolute best.
+      </p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      {% for person in staff %}
+      <div class="col-md-4 reveal" style="transition-delay:{{ loop.index0 * 0.12 }}s;">
+        <div class="staff-card">
+          <div class="staff-avatar"><i class="fa-solid fa-user"></i></div>
+          <h5>{{ person.name }}</h5>
+          <p class="staff-role">{{ person.role }}</p>
+          <p class="staff-meta">{{ person.experience }}</p>
+          <div class="staff-tags">
+            {% for tag in person.specialization.split(',') %}
+            <span class="staff-tag">{{ tag.strip() }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     TESTIMONIALS
+     ====================================== -->
+<section class="section-pad testimonials-bg">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow" style="color:var(--gold);border-color:rgba(201,152,62,.4);">Testimonials</span>
+      <h2 class="display-serif" style="font-size:clamp(2.2rem,4.5vw,3.4rem);color:#fff;">
+        Words From Our <em style="color:var(--gold-lt);">Clients</em>
+      </h2>
+    </div>
+    <div class="row g-4">
+      {% for name, text, stars in [
+        ('Anjali Sharma',  'Absolutely loved the bridal package! They made me look like a dream on my wedding day. The team is so skilled and caring.', '★★★★★'),
+        ('Sneha Patil',    'The best facial I\'ve ever had. My skin felt so refreshed and glowing. The ambiance is super relaxing too!', '★★★★★'),
+        ('Pooja Desai',    'Came for a hair spa and left feeling like a whole new person. Very hygienic setup and friendly staff. Highly recommend!', '★★★★★')
+      ] %}
+      <div class="col-md-4 reveal" style="transition-delay:{{ loop.index0 * 0.12 }}s;">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">{{ stars }}</div>
+          <p class="testimonial-text">{{ text }}</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <div class="testimonial-name">{{ name }}</div>
+              <div class="testimonial-meta">Verified Client</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     BOOKING
+     ====================================== -->
+<section id="booking" class="section-pad booking-bg">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-4 reveal">
+        <span class="eyebrow">Book Now</span>
+        <h2 class="display-serif" style="font-size:clamp(2.2rem,4.5vw,3.2rem);margin-bottom:1.2rem;">
+          Reserve Your<br><em style="color:var(--rose);">Beauty Appointment</em>
+        </h2>
+        <p style="color:var(--muted);font-size:.93rem;line-height:1.75;margin-bottom:2rem;">
+          Fill the form and our team will confirm your appointment within 30 minutes. Walk-ins welcome too!
+        </p>
+
+        <div class="booking-info-card">
+          <div class="booking-info-item">
+            <div class="booking-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="booking-info-label">Location</div>
+              <div class="booking-info-value">Near Main Road, Pune, Maharashtra</div>
+            </div>
+          </div>
+          <div class="booking-info-item">
+            <div class="booking-info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="booking-info-label">Phone / WhatsApp</div>
+              <div class="booking-info-value">+91 98765 43210</div>
+            </div>
+          </div>
+          <div class="booking-info-item">
+            <div class="booking-info-icon"><i class="fa-regular fa-clock"></i></div>
+            <div>
+              <div class="booking-info-label">Working Hours</div>
+              <div class="booking-info-value">Mon – Sun: 10 AM – 8 PM</div>
+            </div>
+          </div>
+          <div class="booking-info-item">
+            <div class="booking-info-icon"><i class="fa-solid fa-star"></i></div>
+            <div>
+              <div class="booking-info-label">Client Rating</div>
+              <div class="booking-info-value">4.9 / 5 — 500+ Reviews</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 reveal reveal-delay-2">
+        <div class="booking-form-card">
+          <h3 style="font-family:var(--font-display);font-size:1.9rem;color:var(--plum);margin-bottom:6px;">Book an Appointment</h3>
+          <p style="color:var(--muted);font-size:.88rem;margin-bottom:28px;">All fields marked * are required.</p>
+
+          <form method="post" action="{{ url_for('book_appointment') }}">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label-custom">Customer Name *</label>
+                <input class="form-control-custom" name="customer_name" placeholder="Your full name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-custom">Mobile Number *</label>
+                <input class="form-control-custom" name="mobile" placeholder="+91 00000 00000" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-custom">Email Address</label>
+                <input class="form-control-custom" type="email" name="email" placeholder="you@example.com">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-custom">Select Service *</label>
+                <select class="form-select-custom" name="service_id" required>
+                  <option value="">Choose a service…</option>
+                  {% for s in services %}
+                  <option value="{{ s.id }}">{{ s.name }} — ₹{{ '%.0f'|format(s.price) }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-custom">Preferred Staff</label>
+                <select class="form-select-custom" name="staff_id">
+                  <option value="">Any available staff</option>
+                  {% for p in staff %}
+                  <option value="{{ p.id }}">{{ p.name }} — {{ p.role }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label-custom">Date *</label>
+                <input class="form-control-custom" type="date" name="appointment_date" min="{{ today_date }}" required>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label-custom">Time *</label>
+                <input class="form-control-custom" type="time" name="appointment_time" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label-custom">Message / Special Request</label>
+                <textarea class="form-control-custom" name="message" rows="3" placeholder="Any notes, preferences, or special requests…"></textarea>
+              </div>
+              <div class="col-12 mt-2">
+                <button type="submit" class="btn-submit">
+                  <i class="fa-regular fa-calendar-check"></i>Confirm My Appointment
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================
+     CONTACT
+     ====================================== -->
+<section id="contact" class="section-pad contact-section">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-4 reveal">
+        <div class="footer-logo">Saya</div>
+        <h2 style="font-family:var(--font-display);font-size:2.4rem;color:#fff;margin:8px 0 16px;">
+          Visit Us Today
+        </h2>
+        <p style="color:rgba(255,255,255,.6);font-size:.93rem;line-height:1.75;margin-bottom:24px;">
+          Come experience the luxury of expert beauty care in a warm, welcoming environment.
+        </p>
+        <div style="display:flex;gap:10px;">
+          {% for icon, href in [('fa-instagram','#'),('fa-facebook','#'),('fa-youtube','#'),('fa-whatsapp','https://wa.me/919876543210')] %}
+          <a href="{{ href }}" class="social-link" target="_blank"><i class="fa-brands {{ icon }}"></i></a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-lg-8 reveal reveal-delay-1">
+        <div class="row g-3">
+          {% for icon, label, value in [
+            ('fa-location-dot', 'Address',     'Near Main Road, Pune, Maharashtra'),
+            ('fa-phone',        'Phone',        '+91 98765 43210'),
+            ('fa-brands fa-whatsapp', 'WhatsApp', '+91 98765 43210'),
+            ('fa-envelope',     'Email',        'hello@sayabeauty.in'),
+            ('fa-clock',        'Mon – Fri',    '10 AM – 8 PM'),
+            ('fa-calendar',     'Sat – Sun',    '9 AM – 9 PM')
+          ] %}
+          <div class="col-md-6">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid {{ icon }}"></i></div>
+              <div>
+                <div class="contact-label">{{ label }}</div>
+                <div class="contact-value">{{ value }}</div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="footer-bottom">
+  <div class="container">
+    <span style="font-family:var(--font-script);font-size:1.1rem;color:rgba(255,255,255,.35);margin-right:8px;">Saya</span>
+    © {{ current_year }} Saya Beauty Parlor · All Rights Reserved · Made with <i class="fa-solid fa-heart" style="color:#c8416b;font-size:.8rem;"></i> in Pune
+  </div>
+</div>
+
+<!-- Floating buttons -->
+<a class="floating-btn floating-book-btn" href="#booking">
+  <i class="fa-regular fa-calendar-check"></i>
+  <span class="tooltip-text">Book Now</span>
+</a>
+<a class="floating-btn floating-wa" href="https://wa.me/919876543210" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="tooltip-text">WhatsApp</span>
+</a>
+<!-- Vertical Appointment Button -->
+<a href="#booking" class="vertical-appointment-btn">
+  Book Appointment
+</a>
+{% endblock %}

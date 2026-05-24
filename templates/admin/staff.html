@@ -1,0 +1,8 @@
+{% extends 'admin/admin_base.html' %}
+{% block page_title %}Staff Members{% endblock %}
+{% block admin_content %}
+<div class="d-flex justify-content-end mb-3"><a class="btn btn-rose" href="{{ url_for('add_staff') }}">Add Staff</a></div>
+<div class="panel table-responsive"><table class="table admin-table align-middle"><thead><tr><th>ID</th><th>Name</th><th>Role</th><th>Specialization</th><th>Experience</th><th>Salary</th><th>Status</th><th>Action</th></tr></thead><tbody>
+{% for s in staff %}<tr><td>#{{ s.id }}</td><td>{{ s.name }}<br><small>{{ s.mobile }} | {{ s.email }}</small></td><td>{{ s.role }}</td><td>{{ s.specialization }}</td><td>{{ s.experience }}</td><td>₹{{ s.salary }}</td><td><span class="status status-{{ s.status|lower }}">{{ s.status }}</span></td><td><a href="{{ url_for('edit_staff', id=s.id) }}" class="btn btn-sm btn-outline-rose">Edit</a> <a onclick="return confirm('Delete staff?')" href="{{ url_for('delete_staff', id=s.id) }}" class="btn btn-sm btn-outline-danger">Delete</a></td></tr>{% endfor %}
+</tbody></table></div>
+{% endblock %}

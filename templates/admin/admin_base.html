@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block extra_css %}<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">{% endblock %}
+{% block content %}
+<div class="admin-layout">
+  <aside class="sidebar">
+    <a class="side-brand" href="{{ url_for('dashboard') }}"><i class="fa-solid fa-spa"></i> Saya Admin</a>
+    <nav>
+      <a href="{{ url_for('dashboard') }}"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+      <a href="{{ url_for('appointments') }}"><i class="fa-regular fa-calendar-check"></i> Appointments</a>
+      <a href="{{ url_for('today_appointments') }}"><i class="fa-solid fa-calendar-day"></i> Today</a>
+      <a href="{{ url_for('pending_appointments') }}"><i class="fa-solid fa-hourglass-half"></i> Pending</a>
+      <a href="{{ url_for('completed_appointments') }}"><i class="fa-solid fa-circle-check"></i> Completed</a>
+      <a href="{{ url_for('customers') }}"><i class="fa-solid fa-users"></i> Customers</a>
+      <a href="{{ url_for('staff') }}"><i class="fa-solid fa-user-tie"></i> Staff Members</a>
+      <a href="{{ url_for('admin_services') }}"><i class="fa-solid fa-list-check"></i> Services</a>
+      <a href="{{ url_for('revenue_report') }}"><i class="fa-solid fa-indian-rupee-sign"></i> Revenue Report</a>
+      <a href="{{ url_for('logout') }}"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    </nav>
+  </aside>
+  <main class="admin-main">
+    <div class="admin-topbar">
+      <div><h4 class="mb-0">{% block page_title %}Dashboard{% endblock %}</h4><small>Welcome, {{ session.username }}</small></div>
+      <a class="btn btn-sm btn-outline-rose" href="{{ url_for('index') }}" target="_blank">Open Website</a>
+    </div>
+    {% block admin_content %}{% endblock %}
+  </main>
+</div>
+{% endblock %}
+{% block extra_js %}<script src="https://cdn.jsdelivr.net/npm/chart.js"></script><script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>{% block admin_js %}{% endblock %}{% endblock %}

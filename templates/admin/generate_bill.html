@@ -1,0 +1,15 @@
+{% extends 'admin/admin_base.html' %}
+{% block page_title %}Generate Bill{% endblock %}
+{% block admin_content %}
+<div class="panel"><h5>Appointment #{{ appt.id }}</h5><p>{{ appt.customer_name }} | {{ appt.mobile }} | {{ appt.service_name }}</p>
+<form method="post" class="row g-3" id="billForm">
+  <div class="col-md-3"><label class="form-label">Service Price</label><input class="form-control bill-field" type="number" step="0.01" name="service_price" value="{{ appt.service_price or 0 }}" required></div>
+  <div class="col-md-3"><label class="form-label">Extra Charges</label><input class="form-control bill-field" type="number" step="0.01" name="extra_charges" value="0"></div>
+  <div class="col-md-3"><label class="form-label">Discount</label><input class="form-control bill-field" type="number" step="0.01" name="discount" value="0"></div>
+  <div class="col-md-3"><label class="form-label">GST %</label><input class="form-control bill-field" type="number" step="0.01" name="gst" value="0"></div>
+  <div class="col-md-4"><label class="form-label">Payment Mode</label><select class="form-select" name="payment_mode"><option>Cash</option><option>UPI</option><option>Card</option><option>Online</option></select></div>
+  <div class="col-md-4"><label class="form-label">Payment Status</label><select class="form-select" name="payment_status"><option>Paid</option><option>Unpaid</option></select></div>
+  <div class="col-md-4"><label class="form-label">Final Amount</label><input class="form-control" id="finalAmount" readonly></div>
+  <div class="col-12"><button class="btn btn-rose">Generate Bill</button></div>
+</form></div>
+{% endblock %}

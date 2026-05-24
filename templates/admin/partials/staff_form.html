@@ -1,0 +1,12 @@
+<div class="panel"><form method="post" class="row g-3">
+  <div class="col-md-6"><label class="form-label">Name</label><input class="form-control" name="name" value="{{ staff.name if staff else '' }}" required></div>
+  <div class="col-md-6"><label class="form-label">Mobile</label><input class="form-control" name="mobile" value="{{ staff.mobile if staff else '' }}"></div>
+  <div class="col-md-6"><label class="form-label">Email</label><input class="form-control" name="email" value="{{ staff.email if staff else '' }}"></div>
+  <div class="col-md-6"><label class="form-label">Role</label><input class="form-control" name="role" value="{{ staff.role if staff else '' }}" required></div>
+  <div class="col-md-6"><label class="form-label">Specialization</label><input class="form-control" name="specialization" value="{{ staff.specialization if staff else '' }}"></div>
+  <div class="col-md-3"><label class="form-label">Experience</label><input class="form-control" name="experience" value="{{ staff.experience if staff else '' }}"></div>
+  <div class="col-md-3"><label class="form-label">Salary</label><input class="form-control" type="number" name="salary" value="{{ staff.salary if staff else '' }}"></div>
+  <div class="col-md-6"><label class="form-label">Joining Date</label><input class="form-control" type="date" name="joining_date" value="{{ staff.joining_date if staff else '' }}"></div>
+  <div class="col-md-6"><label class="form-label">Status</label><select class="form-select" name="status"><option {% if staff and staff.status=='Active' %}selected{% endif %}>Active</option><option {% if staff and staff.status=='Inactive' %}selected{% endif %}>Inactive</option></select></div>
+  <div class="col-12"><button class="btn btn-rose">Save Staff</button> <a href="{{ url_for('staff') }}" class="btn btn-light">Cancel</a></div>
+</form></div>
