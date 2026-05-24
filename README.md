@@ -87,7 +87,7 @@ To digitize and simplify the daily operations of beauty parlors — from custome
 
 ![Staff](../saya-beauty-parlor/static/images/13.png)
 
-![Staff](../saya-beauty-parlor/static/images/14.png)
+![Staff](saya-beauty-parlor/static/images/14.png)
 
 ![Staff](../saya-beauty-parlor/static/images/15.png)
 
