@@ -50,7 +50,7 @@ To digitize and simplify the daily operations of beauty parlors — from custome
 ## 📸 Project Screenshots
 
 - Home / Hero Section
-![Hero](../saya-beauty-parlor/static/images/1.png)
+![Hero](static/images/1.png)
 
 - Services Section
 ![About](../saya-beauty-parlor/static/images/2.png)
