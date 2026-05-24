@@ -1,4 +1,4 @@
-# 💄 Saya Beauty Parlor — Management System
+# 💄 Saya Beauty Parlor ✨
 
 A complete, modern, and responsive **Beauty Parlor Management System** that lets customers browse services, book appointments online, and allows managers to handle everything — appointments, staff, billing, and revenue — from a sleek admin dashboard. Built with Flask, SQLite, Bootstrap 5, and Chart.js.
 
