@@ -1,4 +1,4 @@
-# 💄 Saya Beauty Parlor Management System
+# 💅 Saya Beauty Parlor 💇‍♀️✨
 
 A complete, modern, and responsive Beauty Parlor Management System built with **Python Flask**, **SQLite**, **Bootstrap 5**, and **Jinja2 Templates**. Designed for managing appointments, customers, staff, services, billing, and revenue — all from a clean admin dashboard.
 
