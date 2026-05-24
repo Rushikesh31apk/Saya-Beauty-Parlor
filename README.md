@@ -50,40 +50,50 @@ To digitize and simplify the daily operations of beauty parlors — from custome
 ## 📸 Project Screenshots
 
 - Home / Hero Section
-![Hero](screenshots/hero.png)
+![Hero](../saya-beauty-parlor/static/images/1.png)
 
 - Services Section
-![Services](screenshots/services.png)
+![About](../saya-beauty-parlor/static/images/2.png)
 
 - Packages Section
-![Packages](screenshots/packages.png)
+![Packages](../saya-beauty-parlor/static/images/3.png)
 
 - Gallery & Staff Section
-![Gallery](screenshots/gallery.png)
+![Gallery](../saya-beauty-parlor/static/images/41.png)
 
 - Testimonials & Contact
-![Contact](screenshots/contact.png)
+![Contact](../saya-beauty-parlor/static/images/51.png)
 
 - Appointment Booking Form
-![Booking](screenshots/booking.png)
+![Booking](../saya-beauty-parlor/static/images/61.png)
 
 - Manager Login Page
-![Login](screenshots/login.png)
+![Login](../saya-beauty-parlor/static/images/71.png)
 
 - Admin Dashboard Home
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](../saya-beauty-parlor/static/images/81.png)
 
 - Appointments Management
-![Appointments](screenshots/appointments.png)
+![Appointments](../saya-beauty-parlor/static/images/91.png)
 
 - Billing & Invoice
-![Billing](screenshots/billing.png)
+![Billing](../saya-beauty-parlor/static/images/10.png)
 
 - Revenue Report & Charts
-![Revenue](screenshots/revenue.png)
+![Revenue](../saya-beauty-parlor/static/images/11.png)
 
 - Staff Management
-![Staff](screenshots/staff.png)
+![Staff](../saya-beauty-parlor/static/images/12.png)
+
+![Staff](../saya-beauty-parlor/static/images/13.png)
+
+![Staff](../saya-beauty-parlor/static/images/14.png)
+
+![Staff](../saya-beauty-parlor/static/images/15.png)
+
+![Staff](../saya-beauty-parlor/static/images/16.png)
+
+![Staff](../saya-beauty-parlor/static/images/17.png)
 
 ---
 
