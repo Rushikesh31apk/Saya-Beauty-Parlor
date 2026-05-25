@@ -49,50 +49,56 @@ To digitize and simplify the daily operations of beauty parlors — from custome
 
 ## 📸 Project Screenshots
 
-- Home / Hero Section
+- Home Section
+-
 ![Hero](static/images/1.png)
 
-- Services Section
+- About Section
 ![About](static/images/2.png)
 
-- Packages Section
+- Services Section
 ![Packages](static/images/3.png)
 
-- Gallery & Staff Section
+- Package Section
 ![Gallery](static/images/41.png)
 
-- Testimonials & Contact
+- Moments Section
 ![Contact](static/images/51.png)
 
-- Appointment Booking Form
+- Our Team Section
 ![Booking](static/images/61.png)
 
-- Manager Login Page
+- Clint review Section
 ![Login](static/images/71.png)
 
-- Admin Dashboard Home
+- Book Appointment section
 ![Dashboard](static/images/81.png)
 
-- Appointments Management
+- Contact section
 ![Appointments](static/images/91.png)
 
-- Billing & Invoice
+- Login Page
 ![Billing](static/images/10.png)
 
-- Revenue Report & Charts
+- Dashboard Page
 ![Revenue](static/images/11.png)
 
-- Staff Management
+- All Appointment Page
 ![Staff](static/images/12.png)
 
+- Today Appointment Page
 ![Staff](static/images/13.png)
 
+- Staff Member Page
 ![Staff](static/images/14.png)
 
+- Serives Page
 ![Staff](static/images/15.png)
 
+- Revenue Page
 ![Staff](static/images/16.png)
 
+- Loading Splash Page
 ![Staff](static/images/17.png)
 
 ---
