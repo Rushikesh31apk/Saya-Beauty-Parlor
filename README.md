@@ -46,62 +46,40 @@ To digitize and simplify the daily operations of beauty parlors — from custome
 - ✅ **Production Ready** — Clean, secure, and client-deployable code
 
 ---
-
 ## 📸 Project Screenshots
 
-- Home Section
--
-![Hero](static/images/1.png)
-
-- About Section
-![About](static/images/2.png)
-
-- Services Section
-![Packages](static/images/3.png)
-
-- Package Section
-![Gallery](static/images/41.png)
-
-- Moments Section
-![Contact](static/images/51.png)
-
-- Our Team Section
-![Booking](static/images/61.png)
-
-- Clint review Section
-![Login](static/images/71.png)
-
-- Book Appointment section
-![Dashboard](static/images/81.png)
-
-- Contact section
-![Appointments](static/images/91.png)
-
-- Login Page
-![Billing](static/images/10.png)
-
-- Dashboard Page
-![Revenue](static/images/11.png)
-
-- All Appointment Page
-![Staff](static/images/12.png)
-
-- Today Appointment Page
-![Staff](static/images/13.png)
-
-- Staff Member Page
-![Staff](static/images/14.png)
-
-- Serives Page
-![Staff](static/images/15.png)
-
-- Revenue Page
-![Staff](static/images/16.png)
-
-- Loading Splash Page
-![Staff](static/images/17.png)
+Here are some screenshots of the **Saya Beauty Parlor Website & Manager Dashboard**.
 
 ---
+
+### 🌐 Landing Website Pages
+
+| Section | Preview |
+|---|---|
+| **Home Section** | ![Hero](static/images/1.png) |
+| **About Section** | ![About](static/images/2.png) |
+| **Services Section** | ![Services](static/images/3.png) |
+| **Package Section** | ![Packages](static/images/41.png) |
+| **Moments Section** | ![Moments](static/images/51.png) |
+| **Our Team Section** | ![Team](static/images/61.png) |
+| **Client Review Section** | ![Client Review](static/images/71.png) |
+| **Book Appointment Section** | ![Book Appointment](static/images/81.png) |
+| **Contact Section** | ![Contact](static/images/91.png) |
+
+---
+
+### 🔐 Manager & Admin Dashboard Pages
+
+| Page | Preview |
+|---|---|
+| **Login Page** | ![Login](static/images/10.png) |
+| **Dashboard Page** | ![Dashboard](static/images/11.png) |
+| **All Appointment Page** | ![All Appointment](static/images/12.png) |
+| **Today Appointment Page** | ![Today Appointment](static/images/13.png) |
+| **Staff Member Page** | ![Staff Member](static/images/14.png) |
+| **Services Page** | ![Services Page](static/images/15.png) |
+| **Revenue Page** | ![Revenue](static/images/16.png) |
+| **Loading Splash Page** | ![Loading Splash](static/images/17.png) |
 
 ## ✨ Key Features
 
